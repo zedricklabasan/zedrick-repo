@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+
+:root {
+    /* Primary */
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    
+    --main-clr: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --f-size: 1.125rem;
+    --f-family: 'Outfit', sans-serif;
+
+    --padding: 2rem;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: var(--main-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.image_container {
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+
+.image {
+    height: 300px;
+    width: 300px;
+    border-radius: 0.5rem;
+}
+
+.view_container {
+    height: 300px;
+    width: 300px;
+    background-color: hsla(178, 100%, 50%,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+
+main {
+    /* Your styles for the main element */
+    display: grid;
+    place-content: center;
+    background-color: var(--card-bg);
+    padding: var(--padding);
+    border-radius: 1.5rem;
+    position: relative;
+    width: 300px;
+
+}
+
+.title {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: var(--f-family);
+    padding-top: 1.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+
+.description {
+    font-family: var(--f-family);
+    font-size: var(--f-size);
+    color: var(--soft-blue);
+    line-height: 1.8rem;
+    margin-bottom: 0;
+
+}
+
+.description p {
+    margin-bottom: 0.5rem;
+}
+
+.eth {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid;
+    border-color: var(--line-color);
+}
+
+.eth_price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--cyan);
+    font-family: var(--f-family);
+    font-weight: 500;
+}
+
+.eth_icon {
+    height: 1.5rem;
+    width: auto;
+    padding-right: 0.5rem;
+}
+
+.time_duration {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--cyan);
+    font-family: var(--f-family);
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+
+.clock {
+    height: 1.5rem;
+    width: auto;
+    padding-right: 0.5rem;
+}
+
+.creator {
+    display: flex;
+    font-family: var(--f-family);
+    font-size: var(--f-size);
+    font-weight: 400;
+    align-items: center;
+}
+
+.creator .creation {
+    color: var(--soft-blue);
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+    
+}
+.Jules {
+    color: var(--white);
+    margin-left: 0.3rem;
+    text-decoration: none;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.title:active {
+    color: var(--cyan);
+}
+
+.view_container:active {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100vh;
+        background-color: var(--main-clr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    
+    }
+    
+    .image_container {
+        height: 300px;
+        width: 300px;
+        position: relative;
+    }
+    
+    
+    .image {
+        height: 230px;
+        width: 250px;
+        border-radius: 0.5rem;
+    }
+    
+    .view_container {
+        height: 230px;
+        width: 250px;
+        background-color: hsla(178, 100%, 50%,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 14px;
+        left: 15px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    
+    
+    main {
+        display: grid;
+        width: 250px;
+        height: 450px;
+        place-content: center;
+        background-color: var(--card-bg);
+        border-radius: 1rem;
+        position: relative;
+        padding: 1rem;
+        box-shadow: 0 1.5rem 0 .9rem hsla(214, 56%, 8%, 0.432), 0 1rem 0 2.8rem hsla(214, 56%, 8%, 0.185);
+        
+    
+    }
+    
+    .title {
+        color: var(--white);
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: var(--f-family);
+        padding-top: 1.5rem;
+        text-decoration: none;
+        transition: 0.3s;
+        
+    }
+    
+    .description {
+        font-family: var(--f-family);
+        font-size: .9rem;
+        color: var(--soft-blue);
+        line-height: 1.2rem;
+        margin-bottom: 0;
+    
+    }
+    
+    .description p {
+        margin-bottom: 0.5rem;
+    }
+    
+    .eth {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid;
+        border-color: var(--line-color);
+    }
+    
+    .eth_price {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: .9rem;
+        color: var(--cyan);
+        font-family: var(--f-family);
+        font-weight: 500;
+    }
+    
+    .eth_icon {
+        height: .9rem;
+        width: auto;
+        padding-right: 0.5rem;
+    }
+    
+    .time_duration {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: var(--cyan);
+        font-family: var(--f-family);
+        font-weight: 300;
+        color: var(--soft-blue);
+        font-size: .9rem;
+    }
+    
+    .clock {
+        height: .9rem;
+        width: auto;
+        padding-right: 0.5rem;
+    }
+    
+    .creator {
+        display: flex;
+        font-family: var(--f-family);
+        font-size: 0.9rem;
+        font-weight: 400;
+        align-items: center;
+    }
+    
+    .creator .creation {
+        color: var(--soft-blue);
+    }
+    
+    .avatar {
+        width: 1.5rem;
+        height: auto;
+        border: 1px solid white;
+        border-radius: 1.5rem;
+        margin-right: 1rem;
+        
+    }
+    .Jules {
+        color: var(--white);
+        margin-left: 0.3rem;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .title:active {
+        color: var(--cyan);
+    }
+    
+    .Jules:active {
+        color: var(--cyan);
+    }
+    
+    .view_container:active {
+        opacity: 1;
+    }
+}
