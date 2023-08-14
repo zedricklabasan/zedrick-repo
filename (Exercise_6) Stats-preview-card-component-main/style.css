@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --v-dark-blue: hsl(233, 47%, 7%);
+    --des-d-blue: hsl(244, 38%, 16%);
+    --s-violet: hsl(277, 64%, 61%);
+
+    --white: hsl(0, 0%, 100%);
+    --st-white: hsla(0, 0%, 100%, 0.75);
+    --st-white2: hsla(0, 0%, 100%, 0.6);
+
+    --f-size: 0.938rem;
+    --ff-inter:'Inter', sans-serif;
+    --ff-lexend: 'Lexend Deca', sans-serif; 
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background-color: var(--v-dark-blue);
+
+}
+
+main {
+    background-color:  var(--des-d-blue);
+    width: 300px;
+    height: 610px;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+
+.image-container {
+    background-color: hsl(279, 30%, 52%);
+    background-image: url(images/image-header-mobile.jpg);
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-size: cover;
+    background-blend-mode: overlay;
+    opacity: .7;
+    
+}
+
+.title {
+    font-family: var(--ff-inter);
+
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    margin: 0 2rem;
+
+
+}
+
+.title span {
+    color: var(--s-violet);
+}
+
+.description {
+   font-size: var(--f-size);
+   font-family: var(--ff-inter);
+   margin-top: 0.9rem;
+   color: var(--st-white);
+   text-indent: 1rem;
+   padding: 0 0.8rem;
+
+}
+
+.details {
+    font-family: var(--ff-inter);
+    padding-top: 1rem;
+    display: grid;
+    padding-bottom: 0.5rem;
+}
+
+.details .companies,
+.templates,
+.queries {
+    text-transform: uppercase;
+    line-height: 0.1rem;
+    font-size: var(--f-size);
+    color: var(--st-white2);
+}
+
+.num {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: lowercase;
+}
+
+.num1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+@media only screen and (min-width: 800px) {
+    
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 800px;
+        height: 300px;
+        background-color:  var(--des-d-blue);
+        border-radius: 0.5rem;
+        text-align: left;
+    }
+
+    .image-container-parent {
+        width: 400px;
+    }
+
+
+    .image-container {
+        background-color: hsl(279, 30%, 52%);
+        background-image: url(images/image-header-mobile.jpg);
+        width: 400px;
+        height: 300px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0.5rem;
+        background-size: cover;
+        background-blend-mode: overlay;
+        opacity: .7;
+        
+    }
+    
+    .title {
+        font-family: var(--ff-inter);
+        color: var(--white);
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding-top: 0rem;
+        margin: 0 2rem;
+        margin-top: 2.5rem;
+    
+    
+    }
+    
+    .title span {
+        color: var(--s-violet);
+    }
+    
+    .description {
+       font-size: .7rem;
+       font-family: var(--ff-inter);
+       margin-top: 0.9rem;
+       color: var(--st-white);
+       text-align: left;
+       text-indent: 0;
+       margin-left: 2rem;
+       padding: 0;
+       margin-right: 3rem;
+       line-height: 1.2rem;
+    
+    
+    }
+    
+    .details {
+        font-family: var(--ff-inter);
+        padding-top: 1rem;
+        justify-content: center;
+        display: flex;
+        gap: 3rem;
+        padding-bottom: 0.5rem;
+        margin-top: 1rem;
+        margin-left: -4rem;
+    }
+    
+    .details .companies,
+    .templates,
+    .queries {
+        text-transform: uppercase;
+        line-height: 0.1rem;
+        font-size: 0.7rem;
+        color: var(--st-white2);
+    }
+    
+    .num {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--white);
+        text-transform: lowercase;
+    }
+    
+    .num1 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--white);
+    }
+ 
+
+
+
+}
